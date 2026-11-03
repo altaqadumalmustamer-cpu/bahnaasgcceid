@@ -2,9 +2,8 @@
 :root{--navy:#061324;--navy-2:#091c30;--gold:#ba965c;--gold-soft:#dbc499;--ivory:#f7f4eb;--ink:#1a242e;--muted:#666e75}
 .shell{background:var(--ivory);overflow:hidden;min-height:100vh}
 .header{height:96px;padding:0 max(5.4%,calc((100vw - 1284px)/2));display:flex;align-items:center;justify-content:space-between;background:var(--navy);color:#fff;position:relative;z-index:5}
-.logo{display:flex;flex-direction:column;gap:5px;color:#fff;text-decoration:none;min-width:210px}
-.logo b{font:800 27px/1 Inter,Arial,sans-serif;letter-spacing:2.4px}
-.logo small{font:500 9px/1.2 Inter,Arial,sans-serif;letter-spacing:1.8px;color:var(--gold-soft)}
+.logo{display:flex;align-items:center;color:#fff;text-decoration:none;min-width:180px;width:180px;height:44px;flex:0 0 180px}
+.logo img{display:block;width:180px;height:44px;object-fit:contain;object-position:left center}
 .header nav{display:flex;align-items:center;gap:38px}
 .header nav a,.lang{font:500 11px Inter,Arial,sans-serif;color:#e5e3d9;text-decoration:none;letter-spacing:.5px}
 .header nav a:hover,.lang:hover{color:var(--gold-soft)}
