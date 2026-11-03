@@ -22,8 +22,8 @@
 .gold-btn:hover{background:#d2b27b;transform:translateY(-2px)}
 .light-link{color:#fff;text-decoration:none;font-size:12px}
 .trust{margin-top:35px;font:500 10px Inter,Arial,sans-serif;color:var(--gold-soft);letter-spacing:1px}
-.hero-visual{height:380px;position:relative;border-radius:8px;overflow:hidden;background:#0f263b}
-.hero-visual img{width:100%;height:100%;object-fit:cover;display:block}
+.hero-visual{height:380px;position:relative;border-radius:8px;overflow:hidden;background:#0f263b url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1400&q=85') center/cover}
+
 .hero-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#061324a8,transparent 70%)}
 .visual-caption{position:absolute;z-index:1;bottom:24px;inset-inline-start:26px;color:#fff;font:600 10px Inter,Arial,sans-serif;letter-spacing:1.4px}
 .hero-foot{position:absolute;bottom:17px;inset-inline:5.4%;display:flex;justify-content:space-between;font:500 9px Inter,Arial,sans-serif;letter-spacing:1.5px;color:#c6cdd3}
@@ -59,8 +59,8 @@
 .service-grid p{font-size:11px;line-height:1.9;color:#78808a}
 .service-grid button{margin-top:auto;padding:0;border:0;background:none;color:#9c7d43;font:700 10px Inter,'Noto Sans Arabic',Arial,sans-serif;cursor:pointer}
 .benefits{display:grid;grid-template-columns:1fr 1fr;gap:8%;background:var(--navy);color:#fff;align-items:center}
-.city-photo{min-height:430px;position:relative;overflow:hidden;border-radius:5px;background:#0f263b}
-.city-photo img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover}
+.city-photo{min-height:430px;position:relative;overflow:hidden;border-radius:5px;background:#0f263b url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=80') center/cover}
+
 .city-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#06132480,transparent 60%)}
 .city-photo span{position:absolute;z-index:1;bottom:22px;inset-inline-start:22px;font:600 10px Inter,Arial,sans-serif;letter-spacing:2px;color:#fff}
 .benefit-copy h2{color:white}
