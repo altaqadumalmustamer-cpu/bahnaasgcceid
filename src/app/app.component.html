@@ -1,6 +1,6 @@
 <div class="shell" [class.english]="!ar">
 <header class="header">
-<a class="logo" href="#home" aria-label="Bahnaas home"><b>BAHNASS</b><small>DOCUMENT CLEARING • UAE</small></a>
+<a class="logo" href="#home" aria-label="Bahnaas home"><img src="assets/bahnaas-logo.svg" alt="BAHNAASS" width="180" height="44"></a>
 <button class="hamb" type="button" (click)="menuOpen=!menuOpen" [attr.aria-expanded]="menuOpen" aria-label="Toggle navigation">☰</button>
 <nav [class.open]="menuOpen"><a href="#services" (click)="menuOpen=false">{{t.nav[1]}}</a><a href="#process" (click)="menuOpen=false">{{t.nav[2]}}</a><a href="#contact" (click)="menuOpen=false">{{t.nav[3]}}</a></nav>
 <button class="lang" type="button" (click)="switchLang()">{{ar?'EN':'العربية'}} ↗</button>
@@ -24,4 +24,4 @@
 <section class="process section" id="process"><div class="center"><span class="eyebrow dark">{{ar?'آلية العمل':'HOW IT WORKS'}}</span><h2>{{t.process}}</h2></div><div class="steps"><article *ngFor="let s of t.steps;let i=index"><span>0{{i+1}}</span><hr><h3>{{s}}</h3><p>{{t.stepText[i]}}</p></article></div></section>
 <section class="faq section"><div><span class="eyebrow dark">{{t.faq}}</span><h2>{{ar?'إجابات عن الأسئلة الشائعة':'Answers to common questions'}}</h2></div><div class="faq-list"><details *ngFor="let q of t.questions;let i=index"><summary>{{q}}</summary><p>{{t.answers[i]}}</p></details></div></section>
 <section class="closing"><span class="eyebrow">BAHNAAS · GCC SERVICES</span><h2>{{t.contact}}</h2><p>{{t.contactText}}</p><a href="#contact" class="gold-btn">{{t.cta}} ↗</a></section>
-</main><footer><a class="logo" href="#home"><b>BAHNASS</b><small>DOCUMENT CLEARING • UAE</small></a><p>{{t.footer}}</p><small class="disclaimer">{{t.disclaimer}}</small><small class="copyright">© 2026 BAHNAAS. {{ar?'جميع الحقوق محفوظة':'All rights reserved.'}}</small></footer></div>
+</main><footer><a class="logo" href="#home" aria-label="Bahnaas home"><img src="assets/bahnaas-logo.svg" alt="BAHNAASS" width="180" height="44"></a><p>{{t.footer}}</p><small class="disclaimer">{{t.disclaimer}}</small><small class="copyright">© 2026 BAHNAAS. {{ar?'جميع الحقوق محفوظة':'All rights reserved.'}}</small></footer></div>
