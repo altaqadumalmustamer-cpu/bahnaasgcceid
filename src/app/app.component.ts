@@ -67,7 +67,7 @@ export class AppComponent {
  constructor(private http:HttpClient){}
  switchLang(){this.lang=this.ar?'en':'ar';document.documentElement.lang=this.lang;document.documentElement.dir=this.ar?'rtl':'ltr';this.menuOpen=false;}
  selectService(i:number){this.form.serviceRequired=this.t.services[i];document.getElementById('contact')?.scrollIntoView({behavior:'smooth'});}
- submit(){this.sent=false;this.error='';if(!this.form.fullName.trim()||!this.form.whatsapp.trim()||!this.form.nationality||!this.form.purpose||!this.form.serviceRequired)return;
+ submit(){this.sent=false;this.error='';if(!this.form.fullName.trim()||!this.form.whatsapp.trim()||!this.form.nationality||!this.form.serviceRequired)return;
  if(!environment.apiUrl){this.error=this.t.configError;return;}
  this.submitting=true;this.http.post(environment.apiUrl,{...this.form,preferredLanguage:this.lang,source:'BAHNAAS GCC Emirates ID'}).subscribe({next:()=>{this.submitting=false;this.sent=true;this.form=this.empty();},error:()=>{this.submitting=false;this.error=this.t.submitError;}});
  }
