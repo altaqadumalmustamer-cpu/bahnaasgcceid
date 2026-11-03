@@ -8,7 +8,7 @@
 <main>
 <section class="hero" id="home">
 <div class="hero-copy"><span class="eyebrow">{{t.eyebrow}}</span><h1 [innerHTML]="t.title"></h1><p>{{t.intro}}</p><div class="actions"><a class="gold-btn" href="#contact">{{t.cta}} ↗</a><a class="light-link" href="#services">{{t.explore}} ↓</a></div><div class="trust">✦ {{t.trust}}</div></div>
-<div class="hero-visual"><img src="assets/hero-consultation.png" alt="Professional consultation in the UAE"><span class="visual-caption">BAHNAAS · UAE SERVICE SUPPORT</span></div>
+<div class="hero-visual" role="img" aria-label="United Arab Emirates cityscape"><span class="visual-caption">BAHNAAS · UAE SERVICE SUPPORT</span></div>
 <div class="hero-foot"><span>BAHNAAS / GCC</span><span>DUBAI · UNITED ARAB EMIRATES</span></div>
 </section>
 <section class="services section" id="services"><div class="section-head"><div><span class="eyebrow dark">{{ar?'خدماتنا':'OUR SERVICES'}}</span><h2>{{t.servicesTitle}}</h2></div><p>{{t.servicesIntro}}</p></div><div class="service-grid"><article *ngFor="let s of t.services;let i=index"><small>0{{i+1}}</small><div class="service-icon">{{['✧','◷','◇','⌂'][i]}}</div><h3>{{s}}</h3><p>{{t.descriptions[i]}}</p><button (click)="selectService(i)" type="button">{{ar?'استفسر عن الخدمة':'Enquire about this service'}} ↗</button></article></div></section>
@@ -20,7 +20,7 @@
 <label>{{t.phone}} *<input name="whatsapp" [(ngModel)]="form.whatsapp" required type="tel" [placeholder]="t.phone" autocomplete="tel"></label>
 </div><p class="fine">{{t.email}} {{ar?'والتفاصيل الإضافية يمكن مشاركتها لاحقاً عند الحاجة.':'and any additional details can be shared later if needed.'}}</p>
 <button class="submit" [disabled]="!f.valid||submitting">{{submitting?t.sending:t.send}} ↗</button><p class="fine">{{t.formDisclaimer}}</p><p class="success" *ngIf="sent" role="status">{{t.success}}</p><p class="error" *ngIf="error" role="alert">{{error}}</p></form></section>
-<section class="benefits section"><div class="city-photo"><img src="assets/hero-consultation.png" alt="" loading="lazy"><span>BAHNAAS · DUBAI</span></div><div class="benefit-copy"><span class="eyebrow">WHY BAHNAAS</span><h2>{{t.why}}</h2><article *ngFor="let b of t.benefits;let i=index"><span>0{{i+1}}</span><div><h3>{{b}}</h3><p>{{t.benefitText[i]}}</p></div></article></div></section>
+<section class="benefits section"><div class="city-photo" role="img" aria-label="Dubai cityscape"><span>BAHNAAS · DUBAI</span></div><div class="benefit-copy"><span class="eyebrow">WHY BAHNAAS</span><h2>{{t.why}}</h2><article *ngFor="let b of t.benefits;let i=index"><span>0{{i+1}}</span><div><h3>{{b}}</h3><p>{{t.benefitText[i]}}</p></div></article></div></section>
 <section class="process section" id="process"><div class="center"><span class="eyebrow dark">{{ar?'آلية العمل':'HOW IT WORKS'}}</span><h2>{{t.process}}</h2></div><div class="steps"><article *ngFor="let s of t.steps;let i=index"><span>0{{i+1}}</span><hr><h3>{{s}}</h3><p>{{t.stepText[i]}}</p></article></div></section>
 <section class="faq section"><div><span class="eyebrow dark">{{t.faq}}</span><h2>{{ar?'إجابات عن الأسئلة الشائعة':'Answers to common questions'}}</h2></div><div class="faq-list"><details *ngFor="let q of t.questions;let i=index"><summary>{{q}}</summary><p>{{t.answers[i]}}</p></details></div></section>
 <section class="closing"><span class="eyebrow">BAHNAAS · GCC SERVICES</span><h2>{{t.contact}}</h2><p>{{t.contactText}}</p><a href="#contact" class="gold-btn">{{t.cta}} ↗</a></section>
