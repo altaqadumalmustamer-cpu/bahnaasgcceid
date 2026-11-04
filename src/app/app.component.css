@@ -10,7 +10,7 @@
 .header .lang{border:1px solid #657083;background:transparent;padding:11px 15px;cursor:pointer}
 .header .hamb{display:none}
 .hero{min-height:668px;position:relative;display:flex;align-items:center;padding:72px max(5.4%,calc((100vw - 1284px)/2));background:var(--navy-2);color:#fff;overflow:hidden}
-.hero-copy{position:relative;z-index:2;width:min(52%,650px);max-width:650px;margin-inline-start:auto;padding-inline-start:30px;border-inline-start:2px solid var(--gold);text-align:start}
+.hero-copy{position:relative;z-index:2;width:min(52%,650px);max-width:650px;margin-inline-start:0;padding-inline-start:30px;border-inline-start:2px solid var(--gold);text-align:start}
 .eyebrow{display:block;color:var(--gold-soft);font:600 11px/1.5 Inter,Arial,sans-serif;letter-spacing:1.8px;margin-bottom:20px}
 .eyebrow.dark{color:var(--gold)}
 .hero h1{font:800 clamp(36px,4vw,54px)/1.22 Inter,'Noto Sans Arabic',Arial,sans-serif;margin:0 0 22px;letter-spacing:-1px}
