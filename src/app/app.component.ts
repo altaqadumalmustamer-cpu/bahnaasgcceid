@@ -14,6 +14,9 @@ interface Lead { fullName:string; email:string; whatsapp:string; nationality:str
 export class AppComponent {
  lang:Lang='ar'; menuOpen=false; submitting=false; sent=false; error='';
  form:Lead=this.empty();
+ readonly whatsappUrl='https://wa.me/971585950145';
+ readonly contactPhone='+971 58 595 0145';
+ readonly businessAddress='Dubai – Deira';
  readonly text={
  ar:{
  nav:['الرئيسية','الخدمات','آلية العمل','تواصل معنا'],eyebrow:'خدمات مساندة لمواطني دول مجلس التعاون',
