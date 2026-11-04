@@ -7,7 +7,7 @@
 </header>
 <main>
 <section class="hero" id="home">
-<div class="hero-copy"><span class="eyebrow">{{t.eyebrow}}</span><h1 [innerHTML]="t.title"></h1><p>{{t.intro}}</p><div class="actions"><a class="gold-btn" href="#contact">{{t.cta}} ↗</a><a class="light-link" href="#services">{{t.explore}} ↓</a></div><div class="trust">✦ {{t.trust}}</div></div>
+<div class="hero-copy"><span class="eyebrow">{{t.eyebrow}}</span><h1 [innerHTML]="t.title"></h1><p>{{t.intro}}</p><div class="actions"><a class="gold-btn" href="#contact">{{t.cta}} ↗</a><a class="light-link" href="#services">{{t.explore}} ↓</a><a class="light-link" [href]="whatsappUrl" target="_blank" rel="noopener">WhatsApp ↗</a></div><div class="trust">✦ {{t.trust}}</div></div>
 <div class="hero-visual" role="img" aria-label="United Arab Emirates cityscape"><span class="visual-caption">BAHNAAS · UAE SERVICE SUPPORT</span></div>
 <div class="hero-foot"><span>BAHNAAS / GCC</span><span>DUBAI · UNITED ARAB EMIRATES</span></div>
 </section>
@@ -24,4 +24,4 @@
 <section class="process section" id="process"><div class="center"><span class="eyebrow dark">{{ar?'آلية العمل':'HOW IT WORKS'}}</span><h2>{{t.process}}</h2></div><div class="steps"><article *ngFor="let s of t.steps;let i=index"><span>0{{i+1}}</span><hr><h3>{{s}}</h3><p>{{t.stepText[i]}}</p></article></div></section>
 <section class="faq section"><div><span class="eyebrow dark">{{t.faq}}</span><h2>{{ar?'إجابات عن الأسئلة الشائعة':'Answers to common questions'}}</h2></div><div class="faq-list"><details *ngFor="let q of t.questions;let i=index"><summary>{{q}}</summary><p>{{t.answers[i]}}</p></details></div></section>
 <section class="closing"><span class="eyebrow">BAHNAAS · GCC SERVICES</span><h2>{{t.contact}}</h2><p>{{t.contactText}}</p><a href="#contact" class="gold-btn">{{t.cta}} ↗</a></section>
-</main><footer><a class="logo" href="#home" aria-label="Bahnaas home"><img src="assets/bahnaas-logo.svg" alt="BAHNAASS" width="180" height="44"></a><p>{{t.footer}}</p><small class="disclaimer">{{t.disclaimer}}</small><small class="copyright">© 2026 BAHNAAS. {{ar?'جميع الحقوق محفوظة':'All rights reserved.'}}</small></footer></div>
+</main><footer><a class="logo" href="#home" aria-label="Bahnaas home"><img src="assets/bahnaas-logo.svg" alt="BAHNAASS" width="180" height="44"></a><p>{{t.footer}}</p><small class="disclaimer">{{t.disclaimer}}</small><small class="copyright">{{businessAddress}} · {{contactPhone}}</small><small class="copyright">© 2026 BAHNAAS. {{ar?'جميع الحقوق محفوظة':'All rights reserved.'}}</small></footer></div>
