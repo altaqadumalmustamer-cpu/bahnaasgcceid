@@ -16,7 +16,7 @@ export class AppComponent {
  form:Lead=this.empty();
  readonly whatsappUrl='https://wa.me/971585950145';
  readonly contactPhone='+971 58 595 0145';
- readonly businessAddress='Dubai – Deira';
+ readonly businessAddress='Dubai, UAE';
  readonly text={
  ar:{
  nav:['الرئيسية','الخدمات','آلية العمل','تواصل معنا'],eyebrow:'خدمات مساندة لمواطني دول مجلس التعاون',
