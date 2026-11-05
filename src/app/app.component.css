@@ -164,3 +164,18 @@ footer>p{font-size:11px;color:#b8c0ca;line-height:1.8}
   .hero-copy{width:100%;max-width:100%;margin-inline-start:0}
   .hero h1{font-size:37px;line-height:1.3}
 }
+
+
+/* Hero placement follows the active language: Arabic right, English left */
+.hero{justify-content:flex-start}
+.hero-copy{margin-inline-start:0!important;margin-inline-end:0!important;text-align:start}
+.shell:not(.english) .hero-copy,
+.shell:not(.english) .hero-copy .eyebrow,
+.shell:not(.english) .hero-copy h1,
+.shell:not(.english) .hero-copy>p,
+.shell:not(.english) .hero-copy .trust{text-align:right!important}
+.shell.english .hero-copy,
+.shell.english .hero-copy .eyebrow,
+.shell.english .hero-copy h1,
+.shell.english .hero-copy>p,
+.shell.english .hero-copy .trust{text-align:left!important}
