@@ -20,7 +20,7 @@ export class AppComponent {
  readonly text={
  ar:{
  nav:['الرئيسية','الخدمات','آلية العمل','تواصل معنا'],eyebrow:'خدمات مساندة لمواطني دول مجلس التعاون',
- title:'رحلتك نحو الهوية الإماراتية، <em>أوضح وأسهل</em>',
+ title:'رحلتك نحو الهوية الإماراتية<em>أوضح وأسهل مع بهناس</em>',
  intro:'نرافقك بخطوات واضحة ومتابعة شخصية لفهم متطلبات خدمات الهوية الإماراتية، من الاستفسار وحتى متابعة الإجراء.',
  cta:'قدّم على الطلب',explore:'استكشف الخدمات',trust:'خدمة خاصة • إرشاد واضح • متابعة شخصية',
  formTitle:'دعنا نساعدك في معرفة الخطوة المناسبة',formIntro:'أرسل بياناتك وسيتواصل معك فريق بهناس لمناقشة طلبك.',
@@ -44,7 +44,7 @@ export class AppComponent {
  },
  en:{
  nav:['Home','Services','How It Works','Contact'],eyebrow:'Dedicated assistance for GCC nationals',
- title:'Your Emirates ID journey, <em>clearer and simpler</em>',
+ title:'Your Emirates ID journey<em>Clearer and easier with Bahnaas</em>',
  intro:'Get clear guidance and personal follow-up to understand Emirates ID service requirements, from your initial enquiry through the process.',
  cta:'Order Now',explore:'Explore services',trust:'Private assistance • Clear guidance • Personal follow-up',
  formTitle:'Let us help you find the right next step',formIntro:'Share your details and the Bahnaas team will contact you to discuss your enquiry.',
