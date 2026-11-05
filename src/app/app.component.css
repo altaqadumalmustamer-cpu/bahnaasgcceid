@@ -114,3 +114,30 @@ footer>p{font-size:11px;color:#b8c0ca;line-height:1.8}
 @media(max-width:680px){
   .form-section{grid-template-columns:minmax(0,1fr)}
 }
+
+/* Brand tagline immediately after the logo */
+.header .brand-tagline{
+  display:inline-flex;
+  align-items:center;
+  margin-inline-start:16px;
+  padding-inline-start:16px;
+  min-height:28px;
+  border-inline-start:1px solid rgba(240,217,170,.42);
+  color:var(--gold-soft);
+  font-family:'IBM Plex Sans Arabic',Inter,Arial,sans-serif;
+  font-size:11px;
+  font-weight:600;
+  letter-spacing:.35px;
+  white-space:nowrap;
+}
+@media(max-width:680px){
+  .header .brand-tagline{
+    margin-inline-start:8px;
+    padding-inline-start:8px;
+    min-height:24px;
+    font-size:9px;
+    letter-spacing:0;
+  }
+  .header .logo{flex:0 0 145px;width:145px;min-width:145px}
+  .header .logo img{width:145px}
+}
