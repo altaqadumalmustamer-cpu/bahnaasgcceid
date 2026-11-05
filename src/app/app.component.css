@@ -179,3 +179,8 @@ footer>p{font-size:11px;color:#b8c0ca;line-height:1.8}
 .shell.english .hero-copy h1,
 .shell.english .hero-copy>p,
 .shell.english .hero-copy .trust{text-align:left!important}
+
+/* Four-step process layout */
+.steps{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media(max-width:950px){.steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:680px){.steps{grid-template-columns:minmax(0,1fr)}}
